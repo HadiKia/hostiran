@@ -1,3 +1,5 @@
+@import url('main.css');
+
 * {
     padding: 0;
     margin: 0;
@@ -13,13 +15,12 @@
 }
 
 @font-face {
-    font-family: KalamehWeb-Bold;
-    src: url("../fonts/KalamehWeb_Black.");
+    font-family: vazir;
+    src: url('../fonts/Vazir.ttf');
 }
 
 header {
     width: 100%;
-    transition: 3s ease-in-out;
 }
 
 body {
@@ -32,17 +33,19 @@ body {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .headerTop {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: .8em 1em;
     background-color: #213368;
+    z-index: 1;
 }
 
 .hamburgerMenu {
@@ -87,11 +90,13 @@ body {
 
 .menu {
     position: fixed;
+    top: 3.7em;
     width: 100%;
     height: 100vh;
     display: none;
     color: #0A1F44;
-    background-color:#fff;
+    background-color: #fff;
+    z-index: 1;
 }
 
 .menu.display {
@@ -167,7 +172,7 @@ body {
 .cloudHeader.openCloudItem>span .fa-angle-up,
 .servicesHeader.openServicesItem>span .fa-angle-up,
 .otherServicesHeader.openOtherServicesItem>span .fa-angle-up,
- .hostIranHeader.openHostIranItem > span .fa-angle-up{
+.hostIranHeader.openHostIranItem>span .fa-angle-up {
     display: block;
 }
 
@@ -177,8 +182,8 @@ body {
 .serverHeader.openServerItem>span .fa-angle-down,
 .openCloudItem.openCloudItem>span .fa-angle-down,
 .servicesHeader.openServicesItem>span .fa-angle-down,
-.otherServicesHeader.openOtherServicesItem>span .fa-angle-down ,
-.hostIranHeader.openHostIranItem > span .fa-angle-down{
+.otherServicesHeader.openOtherServicesItem>span .fa-angle-down,
+.hostIranHeader.openHostIranItem>span .fa-angle-down {
     display: none;
 }
 
@@ -230,8 +235,8 @@ body {
 .server,
 .cloud,
 .services,
-.otherServices ,
-.hostIran{
+.otherServices,
+.hostIran {
     border-bottom: 1px solid #e2e2e2;
     transition: all .5s ease-in-out;
     overflow: hidden;
@@ -242,8 +247,8 @@ body {
 .server:not([open]),
 .cloud:not([open]),
 .services:not([open]),
-.otherServices:not([open]) ,
-.hostIran:not([open]){
+.otherServices:not([open]),
+.hostIran:not([open]) {
     height: 3.5em;
 }
 
@@ -270,9 +275,11 @@ body {
 .otherServices[open] {
     height: 29.5em;
 }
-.hostIran[open]{
+
+.hostIran[open] {
     height: 26.5em;
 }
+
 .cloudHostItem h6 {
     font-size: 1.3rem;
     color: #0A1F44;
@@ -290,8 +297,8 @@ body {
 .serverItem li,
 .cloudItem li,
 .servicesItem li,
-.otherServicesItem li ,
-.hostIranItem li{
+.otherServicesItem li,
+.hostIranItem li {
     font-size: 1.2rem;
     padding: .5em 0;
 }
@@ -303,4 +310,68 @@ body {
 .otherServices a,
 .hostIranItem a {
     color: var(--bColor);
+}
+
+.headerInfo {
+    background-color: #213368;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 4em;
+}
+
+.animation {
+    max-width: 300px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    gap: 1.5em;
+}
+
+.category h2,
+strong {
+    color: var(--wColor);
+    font-family: vazir;
+}
+
+.category strong {
+    text-align: center;
+    font-size: .9rem;
+    line-height: 2em;
+    padding: 0 .5em;
+}
+
+.categoryItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.categoryItem span {
+    color: var(--wColor);
+    font-size: .9rem;
+    font-family: vazir;
+}
+
+.category a {
+    font-size: 1rem;
+    color: var(--wColor);
+    font-family: vazir;
+    border: 1px solid var(--wColor);
+    padding: .5em 1em;
+    border-radius: .4em;
+    transition: all .3s ease-in-out;
+    margin: 1em 0;
+}
+
+.category a:hover {
+    background-color: var(--wColor);
+    color: #213368;
 }

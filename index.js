@@ -43,3 +43,11 @@ function otherServicesItem(){
 function hostIranItem(){
   hostIranHeader.classList.toggle('openHostIranItem')
 }
+
+const animation = bodymovin.loadAnimation({
+  container : document.querySelector('.animation'),
+renderer : 'svg',
+loop : true,
+autoplay : true,
+path : '41547-cloud-hosting.json'
+})
