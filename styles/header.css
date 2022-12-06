@@ -1,0 +1,306 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: KalamehWeb;
+}
+
+@font-face {
+    font-family: KalamehWeb;
+    src: url("../fonts/KalamehWeb_Regular.ttf");
+}
+
+@font-face {
+    font-family: KalamehWeb-Bold;
+    src: url("../fonts/KalamehWeb_Black.");
+}
+
+header {
+    width: 100%;
+    transition: 3s ease-in-out;
+}
+
+body {
+    direction: rtl;
+}
+
+:root {
+    --wColor: #f1f1f1;
+    --bColor: #2d2d2d
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.headerTop {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8em 1em;
+    background-color: #213368;
+}
+
+.hamburgerMenu {
+    cursor: pointer;
+}
+
+.hamburgerMenu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: .3em;
+    background-color: #B1B7C3;
+    margin: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.hamburgerMenu span:last-child {
+    width: 18px;
+}
+
+.hamburgerMenu.open>span:last-child {
+    opacity: 0;
+}
+
+.hamburgerMenu.open>span:first-child {
+    transform: translateY(8px) rotate(45deg)
+}
+
+.hamburgerMenu.open>span:nth-child(2) {
+    transform: rotate(-45deg)
+}
+
+.headerTop img {
+    cursor: pointer;
+}
+
+.headerTop span {
+    font-size: 1.7rem;
+    color: #B1B7C3;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    color: #0A1F44;
+    background-color:#fff;
+}
+
+.menu.display {
+    display: block;
+}
+
+.contactUs {
+    transition: all .5s ease-in-out;
+    border-bottom: 15px solid#F8F9FB;
+    overflow: hidden;
+}
+
+.contactUs:not([open]) {
+    height: 5em;
+}
+
+.contactUs[open] {
+    height: 19em;
+}
+
+.contactHeader,
+.cloudHostHeader,
+.domainHeader,
+.serverHeader,
+.cloudHeader,
+.servicesHeader,
+.otherServicesHeader,
+.hostIranHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.4em;
+    cursor: pointer;
+}
+
+.contactHeader span,
+.cloudHostHeader span,
+.domainHeader span,
+.serverHeader span,
+.cloudHeader span,
+.servicesHeader span,
+.otherServicesHeader span,
+.hostIranHeader span {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-size: 1.4rem;
+}
+
+.contactHeader i,
+.cloudHostHeader i,
+.domainHeader i,
+.serverHeader i,
+.cloudHeader i,
+.servicesHeader i,
+.otherServicesHeader i,
+.hostIranHeader i {
+    font-size: 1.1rem;
+}
+
+.hostIranHeader img {
+    width: 22px;
+}
+
+.fa-angle-up {
+    display: none;
+}
+
+.contactHeader.open>span .fa-angle-up,
+.cloudHostHeader.openItem>span .fa-angle-up,
+.domainHeader.openDomainItem>span .fa-angle-up,
+.serverHeader.openServerItem>span .fa-angle-up,
+.cloudHeader.openCloudItem>span .fa-angle-up,
+.servicesHeader.openServicesItem>span .fa-angle-up,
+.otherServicesHeader.openOtherServicesItem>span .fa-angle-up,
+ .hostIranHeader.openHostIranItem > span .fa-angle-up{
+    display: block;
+}
+
+.contactHeader.open>span .fa-angle-down,
+.cloudHostHeader.openItem>span .fa-angle-down,
+.domainHeader.openDomainItem>span .fa-angle-down,
+.serverHeader.openServerItem>span .fa-angle-down,
+.openCloudItem.openCloudItem>span .fa-angle-down,
+.servicesHeader.openServicesItem>span .fa-angle-down,
+.otherServicesHeader.openOtherServicesItem>span .fa-angle-down ,
+.hostIranHeader.openHostIranItem > span .fa-angle-down{
+    display: none;
+}
+
+.contactItem,
+.cloudHostItem,
+.domainItem,
+.serverItem,
+.cloudItem,
+.servicesItem,
+.otherServicesItem,
+.hostIranItem {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1.4em;
+    gap: .5em;
+    background-color: #F8F9FB;
+}
+
+.contactItem p {
+    font-size: 1.5rem;
+    color: #0A1F44;
+}
+
+.contactItem div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactItem div span,
+.cloudHostItem a {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-size: 1.4rem;
+    color: var(--bColor);
+}
+
+.contactItem div span i {
+    font-size: 1.2rem;
+    color: #26AAE0;
+}
+
+.fa-phone-volume {
+    transform: rotate(-45deg);
+}
+
+.cloudHost,
+.domain,
+.server,
+.cloud,
+.services,
+.otherServices ,
+.hostIran{
+    border-bottom: 1px solid #e2e2e2;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+
+.cloudHost:not([open]),
+.domain:not([open]),
+.server:not([open]),
+.cloud:not([open]),
+.services:not([open]),
+.otherServices:not([open]) ,
+.hostIran:not([open]){
+    height: 3.5em;
+}
+
+.cloudHost[open] {
+    height: 33em;
+}
+
+.domain[open] {
+    height: 14em;
+}
+
+.server[open] {
+    height: 23em;
+}
+
+.cloud[open] {
+    height: 17em;
+}
+
+.services[open] {
+    height: 11em;
+}
+
+.otherServices[open] {
+    height: 29.5em;
+}
+.hostIran[open]{
+    height: 26.5em;
+}
+.cloudHostItem h6 {
+    font-size: 1.3rem;
+    color: #0A1F44;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: .5em;
+}
+
+.cloudHostItem a {
+    font-size: 1.2rem;
+    color: var(--bColor);
+    padding: .2em 0;
+}
+
+.domainItem li,
+.serverItem li,
+.cloudItem li,
+.servicesItem li,
+.otherServicesItem li ,
+.hostIranItem li{
+    font-size: 1.2rem;
+    padding: .5em 0;
+}
+
+.domainItem a,
+.serverItem a,
+.cloudItem a,
+.servicesItem a,
+.otherServices a,
+.hostIranItem a {
+    color: var(--bColor);
+}

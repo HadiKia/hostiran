@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هاست ایران</title>
+    <link rel="stylesheet" href="icons/css/all.css">
+    <link rel="stylesheet" href="styles/header.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerTop">
+            <div class="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img src="images/logo.svg" alt="logo">
+            <span class="login"><i class="fa-light fa-circle-user"></i></span>
+        </div>
+
+        <nav class="menu">
+            <details class="contactUs">
+                <summary class="contactHeader" onclick="contactItem()">
+                    <span><i class="fa-light fa-phone-flip"></i>تماس با ما</span>
+                    <span>۰۲۱-۲۸۳۱۰<i class="fa-solid fa-angle-down"></i><i
+                            class="fa-sharp fa-solid fa-angle-up"></i></span>
+                </summary>
+                <div class="contactItem">
+                    <p>واحد فروش</p>
+                    <div>
+                        <span><i class="fa-light fa-envelope"></i>sales@Hostiran.Net</span>
+                        <span><i class="fa-light fa-phone-volume"></i>۰۲۱-۲۸۳۱۰</span>
+                    </div>
+                </div>
+                <div class="contactItem">
+                    <p>واحد پشتیبانی</p>
+                    <div>
+                        <span><i class="fa-light fa-envelope"></i>support@Hostiran.Net</span>
+                        <span><i class="fa-light fa-phone-volume"></i>۰۲۱-۲۸۳۱۰</span>
+                    </div>
+                </div>
+            </details>
+
+            <details class="cloudHost">
+                <summary class="cloudHostHeader" onclick="cloudHostItem()">
+                    <span><i class="fa-light fa-database"></i>هاست ابری</span>
+                    <span><i class="fa-solid fa-angle-down"></i><i class="fa-sharp fa-solid fa-angle-up"></i></span>
+                </summary>
+                <div class="cloudHostItem">
+                    <h6>همه سرویس های هاست</h6>
+                    <a href="#">هاست لینوکس</a>
+                    <a href="#">هاست ویندوز</a>
+                    <a href="#">هاست وردپرس</a>
+                    <a href="#">هاست دانلود</a>
+                    <a href="#">هاست بک‌آپ</a>
+                </div>
+                <div class="cloudHostItem">
+                    <h6>هاست مخصوص فریم‌ورک ها</h6>
+                    <a href="#">هاست پایتون</a>
+                    <a href="#">هاست لاراول</a>
+                    <a href="#">هاست نود جی‌اس</a>
+                    <a href="#">نمایندگی هاست لینوکس</a>
+                </div>
+            </details>
+
+            <details class="domain">
+                <summary class="domainHeader" onclick="domainItem()">
+                    <span><i class="fa-light fa-earth-africa"></i>دامنه</span>
+                    <span><i class="fa-solid fa-angle-down down"></i><i
+                            class="fa-sharp fa-solid fa-angle-up"></i></span>
+                </summary>
+                <ul class="domainItem">
+                    <li><a href="#">ثبت دامنه + پیشنهاد نام</a></li>
+                    <li><a href="#">گواهینامه SSL</a></li>
+                    <li><a href="#">انتقال دامنه</a></li>
+                    <li><a href="#">مالکیت دامنه (WHOIS)</a></li>
+                </ul>
+            </details>
+
+            <details class="server">
+                <summary class="serverHeader" onclick="serverItem()">
+                    <span><i class="fa-light fa-server"></i>سرور و دیتاسنتر</span>
+                    <span><i class="fa-solid fa-angle-down down"></i><i
+                            class="fa-sharp fa-solid fa-angle-up"></i></span>
+                </summary>
+                <ul class="serverItem">
+                    <li><a href="#">دیتاسنتر های ایران (DataCenter)</a></li>
+                    <li><a href="#">فضای کولوکیشن</a></li>
+                    <li><a href="#">سرور مجازی(VPS)</a></li>
+                    <li><a href="#">پشتیبانی و مدیریت سرور</a></li>
+                    <li><a href="#">سرور اختصاصی</a></li>
+                    <li><a href="#">وضعیت سرویس</a></li>
+                </ul>
+            </details>
+
+            <details class="cloud">
+                <summary class="cloudHeader" onclick="cloudItem()">
+                    <span><i class="fa-light fa-cloud-word"></i>ابر هاست ایران</span>
+                    <span><i class="fa-solid fa-angle-down down"></i><i
+                            class="fa-sharp fa-solid fa-angle-up"></i></span>
+                </summary>
+                <ul class="cloudItem">
+                    <li><a href="#">سرور مجازی ابری(VPS)</a></li>
+                    <li><a href="#">DNS ابری</a></li>
+                    <li><a href="#">شبکه توزیع محتوا (CDN)</a></li>
+                    <li><a href="#">ذخیره سازی ابری (S۳)</a></li>
+                </ul>
+            </details>
+
+            <details class="services">
+                <summary class="servicesHeader" onclick="servicesItem()">
+                    <span><i class="fa-light fa-messages"></i>خدمات ارتباط با مشتری</span>
+                    <span><i class="fa-solid fa-angle-down down"></i><i
+                            class="fa-sharp fa-solid fa-angle-up"></i></span>
+                </summary>
+                <ul class="servicesItem">
+                    <li><a href="">سامانه پیام کوتاه</a></li>
+                    <li><a href="">ایمیل تراکنشی</a></li>
+                </ul>
+            </details>
+
+            <details class="otherServices">
+                <summary class="otherServicesHeader" onclick="otherServicesItem()">
+                    <span><i class="fa-light fa-cart-shopping"></i>سایر خدمات</span>
+                    <span><i class="fa-solid fa-angle-down down"></i><i
+                            class="fa-sharp fa-solid fa-angle-up"></i></span>
+                </summary>
+                <ul class="otherServicesItem">
+                    <li><a href="#">گواهینامه SSL</a></li>
+                    <li><a href="#">پشتیبانی و مدیریت سرور</a></li>
+                    <li><a href="#">سایت ساز</a></li>
+                    <li><a href="#">زیبال</a></li>
+                    <li><a href="#">حمایت از کسب و کارها</a></li>
+                    <li><a href="#">رایچت</a></li>
+                    <li><a href="#">آنتی تحریم</a></li>
+                    <li><a href="#">کلاس مجازی</a></li>
+                </ul>
+            </details>
+
+            <details class="hostIran">
+                <summary class="hostIranHeader" onclick="hostIranItem()">
+                    <span><img src="images/logo.jpg" alt="logo"> هاست ایران</span>
+                    <span><i class="fa-solid fa-angle-down down"></i><i
+                            class="fa-sharp fa-solid fa-angle-up"></i></span>
+                </summary>
+                <ul class="hostIranItem">
+                    <li><a href="#">شماره حساب ها</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">راهنما</a></li>
+                    <li><a href="#">وضعیت سرویس</a></li>
+                    <li><a href="#">بلاگ</a></li>
+                    <li><a href="#">مستندات فنی</a></li>
+                    <li><a href="#">فرصت های شغلی</a></li>
+                </ul>
+            </details>
+        </nav>
+    </header>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
