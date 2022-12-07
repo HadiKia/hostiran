@@ -132,9 +132,38 @@ main {
     border: 1px solid #e9e9e9bd;
     padding: .6em ;
     border-radius: .3em;
-    /* font-family: vazir; */
     transition: all.3s ease-in-out;
 }
 .searchContainer a:hover{
     background: #21356610;
+}
+.aboutServices{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3em;
+}
+.animation2{
+    max-width: 300px;
+    margin: 0 auto;
+}
+.aboutServices h3{
+    color: #0A1F44;
+    font-size: 1.8rem;
+    line-height: 1.5em;
+  padding: 1em 0;
+}
+.aboutServicesItem{
+    display: flex;
+}
+.aboutServicesItem li{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    font-size: 1.1rem;
+    padding: .5em  1em;
+    color: #0A1F44;
+}
+.aboutServicesItem i{
+    color: #FCB814;
 }

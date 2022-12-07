@@ -51,3 +51,11 @@ loop : true,
 autoplay : true,
 path : '41547-cloud-hosting.json'
 })
+
+const animation2 =  bodymovin.loadAnimation({
+  container : document.querySelector('.animation2'),
+renderer : 'svg',
+loop : true,
+autoplay : true,
+path : '98015-cloud-solutions.json'
+})
