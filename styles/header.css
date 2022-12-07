@@ -95,8 +95,8 @@ body {
     height: 100vh;
     display: none;
     color: #0A1F44;
-    background-color: #fff;
-    z-index: 1;
+    background-color: #FFFFFF;
+    z-index: 2;
 }
 
 .menu.display {
@@ -318,11 +318,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 4em;
+    padding-bottom: 3.5em;
 }
 
 .animation {
     max-width: 300px;
+    margin-top: 4em;
 }
 
 .category {
@@ -335,7 +336,7 @@ body {
 }
 
 .category h2,
-strong {
+.category strong {
     color: var(--wColor);
     font-family: vazir;
 }
