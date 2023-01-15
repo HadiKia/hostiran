@@ -45,7 +45,7 @@ body {
     justify-content: space-between;
     padding: .8em 1em;
     background-color: #213368;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hamburgerMenu {
@@ -243,6 +243,10 @@ body {
     overflow: hidden;
 }
 
+.hostIran {
+    margin-bottom: 4em;
+}
+
 .cloudHost:not([open]),
 .domain:not([open]),
 .server:not([open]),
@@ -319,7 +323,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 3.5em;
+    padding-bottom: 7em;
+    position: relative;
 }
 
 .animation {
@@ -376,4 +381,14 @@ body {
 .category a:hover {
     background-color: var(--wColor);
     color: #213368;
+}
+
+.headerPattern {
+    width: 100%;
+    height: 90px;
+    background-image: url('../images/header_pattern.svg');
+    position: absolute;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

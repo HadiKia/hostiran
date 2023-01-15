@@ -59,3 +59,11 @@ loop : true,
 autoplay : true,
 path : '98015-cloud-solutions.json'
 })
+
+//swiper
+const swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
