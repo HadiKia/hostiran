@@ -207,12 +207,14 @@ main {
     gap: 1.5em;
     justify-content: center;
     align-items: center;
-    padding: 3.5em 0;
+    padding: 2.5em 0;
 }
 
 .detailOptions h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #0A1F44;
+    text-align: center;
+    line-height: 2em;
 }
 
 .detailOptions p {
@@ -220,8 +222,37 @@ main {
     line-height: 1.6em;
     text-align: center;
     color: #213466;
+    padding: 0.5em 1.4em;
 }
 
+.virtualTourButton {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: .5em;
+    background-color: #FFFFFF;
+    padding: .8em;
+    width: 80%;
+    border-radius: .5em;
+    box-shadow: 0px 0px 10px 5px #2133680e;
+    border: 1px solid #2133680e;
+    transition: all .3s ease-in-out;
+}
+
+.virtualTourButton a {
+    font-size: 1.2rem;
+    color: #213466;
+
+}
+
+.virtualTourButton i {
+    font-size: 1.1rem;
+    color: #213466;
+
+}
+.virtualTourButton:active{
+    transform: scale(.9);
+}
 .borderBottom {
     display: flex;
     gap: .5em;
@@ -245,23 +276,62 @@ main {
     width: 15px;
 }
 
+.swiper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mySwiper {
+    width: 90%;
+    margin-bottom: 1em;
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear
+}
+
 .swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2em;
-    background: linear-gradient(180deg, #F8F9FB, #FFFFFF);
     padding: 2em 0;
+    border-radius: 1em;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px #2133680e;
+    border: 1px solid #2133680e;
 }
+
 
 .swiper-slide img {
     max-width: 100%;
 }
 
 .swiper-slide h4 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     color: #0A1F44;
+}
+
+.swiper-slide h3 {
+    font-size: 2rem;
+}
+
+.serverLocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+
+.serverLocation span {
+    font-size: 1.1em;
+    background-color: #E3E8F6;
+    color: #213466;
+    padding: .2em .7em;
+    border-radius: .3em;
 }
 
 .hostOption {
@@ -273,15 +343,32 @@ main {
 }
 
 .hostOption span {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
+    text-align: right;
     gap: .5em;
     color: #213466;
 }
 
 .hostOption span i {
     color: #4DB757;
+    font-size: 1.2rem;
+}
+
+.hostOption p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    gap: .5em;
+    color: #8E9BAC;
+    margin-top: 1em;
+}
+
+.hostOption p span {
+    font-weight: bold;
+    color: #213466;
 }
 
 .swiper-slide a {
@@ -291,10 +378,15 @@ main {
     text-align: center;
     padding: .6em 1em;
     border: 1px solid #213466;
-    border-radius: .4em;
+    border-radius: .3em;
     transition: all .3s ease-in-out;
 }
 
 .swiper-slide a:hover {
     background-color: #2133680e;
+}
+
+.dedicatedImg {
+    max-width: 90%;
+    margin-bottom: 3em;
 }
