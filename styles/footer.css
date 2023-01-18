@@ -1,0 +1,245 @@
+footer {
+    width: 100%;
+    background-image: url('../images/footer_pattern.svg');
+    background-size: 400vw;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #213368;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5em;
+    position: relative;
+}
+
+.questionHeader {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 7em;
+    padding: 1.5em 2em;
+    border-radius: .5em;
+    background: linear-gradient(120deg, #213368, #1B2D5E);
+    box-shadow: 5px 5px 7px #1c2b58,
+        -5px -5px 7px #263b78;
+}
+
+.questionHeaderImg {
+    text-align: center;
+}
+
+.questionHeaderImg img {
+    max-width: 90%;
+}
+
+.questionHeaderTitle {
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+}
+
+.questionHeaderTitle h3,
+.questionHeader p {
+    color: #F8F8FF;
+}
+
+.questionHeaderTitle h3 {
+    font-size: 1.3rem;
+    line-height: 1.5em;
+}
+
+.questionHeaderTitle p {
+    font-size: 1.1rem;
+}
+
+.questionHeaderTitle a {
+    text-align: center;
+    padding: .6em;
+    background-color: #FCB813;
+    color: #F8F8FF;
+    border-radius: .25em;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 1em;
+    transition: all .3s ease-in-out;
+}
+
+.questionHeaderTitle a:active {
+    transform: scale(.9);
+}
+
+.questionBox {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.questionBoxItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1.5em;
+    border-radius: .5em;
+    background: linear-gradient(130deg, #213368, #1B2D5E);
+    box-shadow: 5px 5px 7px #1c2b58,
+        -5px -5px 7px #263b78;
+    cursor: pointer;
+}
+
+.questionBoxItem i {
+    font-size: 3rem;
+}
+
+.questionBoxItem:nth-child(1) i {
+    color: #4DB655;
+}
+
+.questionBoxItem:nth-child(2) i {
+    color: #4AC5E9;
+}
+
+.questionBoxItem:nth-child(3) i {
+    color: #FCB813;
+}
+
+.questionBoxItemTitle h5 {
+    font-size: 1.25rem;
+    color: #F8F8FF;
+}
+
+.questionBoxItemTitle p {
+    padding-top: .5em;
+    color: #F8F8FF;
+}
+
+.footerLinks {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    padding-bottom: 6em;
+}
+
+.contactFooter {
+    width: 100%;
+    background: linear-gradient(120deg, #213368, #1B2D5E);
+    box-shadow: 5px 5px 7px #1c2b58,
+        -5px -5px 7px #263b78;
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactFooterHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid #a6aebc77;
+}
+
+.contactFooterHeaderItem1 {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    background-color: #FCB813;
+    padding: .5em 1em;
+    border-radius: .25em;
+}
+
+.contactFooterHeaderItem1 i,
+.contactFooterHeaderItem1 a {
+    color: #FFFFFF;
+}
+
+.contactFooterHeaderItem1 a {
+    font-size: 1.3rem;
+}
+
+.contactFooterHeaderItem2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contactFooterHeaderItem2 span:nth-child(1) {
+    font-size: 1.3rem;
+    color: #FFFFFF;
+}
+
+.contactFooterHeaderItem2 span:nth-child(2) {
+    color: #A6AEBC;
+}
+
+.contactFooterContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.5em;
+}
+
+.contactFooterContainer p {
+    color: #A6AEBC;
+    font-size: 1.1rem;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .8em;
+}
+
+.socials i {
+    cursor: pointer;
+    color: #A6AEBC;
+    font-size: 1.1rem;
+}
+
+.footerLinksItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5em;
+}
+
+.footerLinksItem h6 {
+    color: #F8F8FF;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #a6aebc23;
+    padding-bottom: .5em;
+}
+
+.footerLinksItem ul li a {
+    color: #A6AEBC;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+}
+
+.developer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    border-top: 1px solid #a6aebc23;
+    padding: 1em;
+}
+
+.developer p {
+    font-size: 1.5rem;
+    color: #A6AEBC;
+}

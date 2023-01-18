@@ -34,39 +34,35 @@ function serverItem() {
 function cloudItem() {
   cloudHeader.classList.toggle("openCloudItem");
 }
-function servicesItem(){
+function servicesItem() {
   servicesHeader.classList.toggle('openServicesItem')
 }
-function otherServicesItem(){
+function otherServicesItem() {
   otherServicesHeader.classList.toggle("openOtherServicesItem");
 }
-function hostIranItem(){
+function hostIranItem() {
   hostIranHeader.classList.toggle('openHostIranItem')
 }
 
 const animation = bodymovin.loadAnimation({
-  container : document.querySelector('.animation'),
-renderer : 'svg',
-loop : true,
-autoplay : true,
-path : '41547-cloud-hosting.json'
+  container: document.querySelector('.animation'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: '41547-cloud-hosting.json'
 })
 
-const animation2 =  bodymovin.loadAnimation({
-  container : document.querySelector('.animation2'),
-renderer : 'svg',
-loop : true,
-autoplay : true,
-path : '98015-cloud-solutions.json'
+const animation2 = bodymovin.loadAnimation({
+  container: document.querySelector('.animation2'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: '98015-cloud-solutions.json'
 })
 
 //swiper
 const swiper = new Swiper(".mySwiper", {
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
   autoplay: {
     delay: 3500,
-},
+  },
 });
